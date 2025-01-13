@@ -48,7 +48,7 @@ The Arduino and sensor connections are detailed in the circuit diagram:
 1. Ensure Python 3.x is installed on your system.
 2. Install required Python libraries using pip:
    ```bash
-   pip install matplotlib pandas
+   pip install matplotlib pyserial
    ```
 3. Execute the `grapher.py` script to generate comparative performance graphs:
    ```bash
@@ -59,13 +59,13 @@ The Arduino and sensor connections are detailed in the circuit diagram:
 
 - **Hardware**:
   - Arduino microcontroller
-  - Sensors for thrust and torque measurement
+  - Sensors for thrust measurement
   - Custom propeller testing mechanism
 
 - **Software**:
   - Arduino IDE
   - Python 3.x
-  - Python libraries: `matplotlib`, `pandas`
+  - Python libraries: `matplotlib`, `pyserial`
 
 ## Usage
 
