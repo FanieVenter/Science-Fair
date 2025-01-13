@@ -1,13 +1,10 @@
-# Science Fair Project
+# Propeller Performance Analysis Project
 
-Welcome to the repository for my Year 9 Science Fair project. This project involves data collection using an Arduino and data visualization with Python.
+Welcome to the repository for my Year 9 Science Fair project, focusing on analyzing the performance of different propeller designs. This project uses an Arduino to collect data and Python for visualizing and analyzing the results.
 
 ## Project Overview
 
-The goal of this project is to collect environmental data using sensors connected to an Arduino microcontroller and visualize the collected data using Python. The project consists of two main components:
-
-1. **Data Collection**: Utilizing an Arduino to gather data from various sensors.
-2. **Data Visualization**: Employing Python to process and graph the collected data.
+The goal of this project is to test and compare the efficiency of various propeller designs by measuring key performance metrics such as thrust and torque. The testing mechanism includes an Arduino setup to collect sensor data, and a Python script for analyzing and visualizing the results.
 
 ## Repository Contents
 
@@ -15,31 +12,55 @@ The goal of this project is to collect environmental data using sensors connecte
 - `grapher.py`: Python script for data visualization.
 - `results/`: Directory containing collected data samples.
 
+## Testing Mechanism
+
+The custom-built testing mechanism is designed to measure thrust and torque produced by different propeller designs. Below is a visual representation of the mechanism:
+
+![Testing Mechanism](Testing_mechanism.svg)
+
+## Circuit Diagram
+
+The Arduino and sensor connections are detailed in the circuit diagram:
+
+![Circuit Diagram](circuit_diagram.svg)
+
+## Project Highlights
+
+- **Hardware**: A custom-built testing mechanism equipped with sensors to measure thrust and torque.
+- **Data Collection**: Sensors interfaced with Arduino to log performance data for various propeller designs.
+- **Data Visualization**: Python scripts to generate graphs for comparative analysis of propeller performance.
+
 ## Getting Started
 
-To replicate this project, follow these steps:
+### Arduino Setup
 
-1. **Arduino Setup**:
-   - Connect the necessary sensors to the Arduino.
-   - Upload the `arduin_program.ino` sketch to the Arduino using the Arduino IDE.
+1. Connect the necessary sensors according to the provided circuit diagram.
+2. Upload the `arduin_program.ino` sketch to the Arduino using the Arduino IDE.
 
-2. **Data Collection**:
-   - Run the Arduino to collect data.
-   - Save the collected data into the `results/` directory.
+### Propeller Testing
 
-3. **Data Visualization**:
-   - Ensure Python is installed on your system.
-   - Install required Python libraries (e.g., `matplotlib`, `pandas`) using pip:
-     ```bash
-     pip install matplotlib pandas
-     ```
-   - Execute the `grapher.py` script to generate graphs from the collected data.
+1. Mount the propeller to the testing mechanism as shown in the diagram.
+2. Run the Arduino setup to collect thrust and torque data.
+3. Save the collected data in the `results/` directory.
+
+### Data Visualization
+
+1. Ensure Python 3.x is installed on your system.
+2. Install required Python libraries using pip:
+   ```bash
+   pip install matplotlib pandas
+   ```
+3. Execute the `grapher.py` script to generate comparative performance graphs:
+   ```bash
+   python grapher.py
+   ```
 
 ## Requirements
 
 - **Hardware**:
   - Arduino microcontroller
-  - Sensors (e.g., temperature, humidity)
+  - Sensors for thrust and torque measurement
+  - Custom propeller testing mechanism
 
 - **Software**:
   - Arduino IDE
@@ -48,18 +69,20 @@ To replicate this project, follow these steps:
 
 ## Usage
 
-1. Collect data using the Arduino and save it in the `results/` directory.
-2. Run the `grapher.py` script to visualize the data:
-   ```bash
-   python grapher.py
-   ```
-3. View the generated graphs to analyze the data.
+1. Set up the testing mechanism and Arduino as outlined.
+2. Test each propeller design and log the data.
+3. Use the Python script to visualize and analyze the data.
+4. Interpret the results to determine the most efficient propeller design.
 
 ## Contributing
 
-This project is a personal educational endeavor. However, suggestions and improvements are welcome. Feel free to fork the repository and submit pull requests.
+This project is an educational endeavor, but suggestions and improvements are welcome. Feel free to fork the repository and submit pull requests.
 
 ## License
 
 This project is open-source and available under the [MIT License](LICENSE).
+
+---
+
+*Note: This project is part of a Year 9 Science Fair focusing on propeller performance analysis.*
 
